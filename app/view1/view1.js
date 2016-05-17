@@ -31,11 +31,11 @@ angular.module('myApp.view1', ['ngRoute'])
 			for(var i=0;i<keywords.length;i++){
 				$http({
 					method: 'GET',
-					url: 'https://www.google.com/search?q=' + keywords[i] + '&tbm=isch&tbs=isz:m'
+					url: 'https://www.google.com/search?q=' + keywords[i] + '&tbm=isch&tbs=isz:m,ift:jpg'
 				}).then(function successCallback(response) {
 					var splittext = response.data;
 					var newsplittext = splittext.split('"ou":"');
-					var tempString = newsplittext[1];
+					var tempString = newsplittext[Math.floor(Math.random() * 10) + 1];
 					var linkF = tempString.split('"');
 					$scope.imgSrc.push(linkF[0]);
 				}, function errorCallback(response) {
