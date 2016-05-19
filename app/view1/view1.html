@@ -1,3 +1,15 @@
+
+<button ng-click="createNapoleon()">Napoleon</button>
+<button ng-click="createSnowball()">Snowball</button>
+<button ng-click="createMajor()">Major</button>
+<button ng-click="createBoxer()">Boxer</button>
+<button ng-click="createSquealer()">Squealer</button>
+<button ng-click="createJones()">Mr. Jones</button>
+<button ng-click="createClover()">Clover</button>
+<button ng-click="createMoses()">Moses</button>
+<br>
+
+
 <label>Collage Title: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><Input type="text" ng-model="CollageTitle"></Input>
 <br>
 Characteristic 1: <Input type="text" ng-model="Keyword1"></Input>
@@ -12,9 +24,16 @@ Characteristic 5: <Input type="text" ng-model="Keyword5"></Input>
 <br>
 Characteristic 6: <Input type="text" ng-model="Keyword6"></Input>
 <Button ng-click="CreateMural()">Create</Button> <br>
+<h1 ng-show="HeaderVisible">{{CollageTitle}}</h1>
+<br>
 <img ng-src="{{imgSrc[0]}}">
+<br>
 <img ng-src="{{imgSrc[1]}}">
+<br>
 <img ng-src="{{imgSrc[2]}}">
+<br>
 <img ng-src="{{imgSrc[3]}}">
+<br>
 <img ng-src="{{imgSrc[4]}}">
+<br>
 <img ng-src="{{imgSrc[5]}}">
