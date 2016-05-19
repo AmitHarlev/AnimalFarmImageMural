@@ -11,6 +11,7 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', ['$scope','$http',function($scope,$http) {
 	$scope.CreateMural = function(){
+		$scope.CollageTitle;
 		var keywords=[];
 		$scope.imgSrc = [];
 
