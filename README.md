@@ -1,4 +1,4 @@
-## Simple Image Strip Creator for English
+## Simple Image Collage Creator for English
 
 To run this project on a localhost you need the Allow-Control-Origin:* Chrome Extension
 
