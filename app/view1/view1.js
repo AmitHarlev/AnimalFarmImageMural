@@ -54,7 +54,7 @@ angular.module('myApp.view1', ['ngRoute'])
 		$scope.Keyword3 = "Violent";
 		$scope.Keyword4 = "Dictator";
 		$scope.Keyword5 = "Treacherous";
-		$scope.Keyword6 = "Cruel";
+		$scope.Keyword6 = "Joseph Stalin";
 	}
 	$scope.createSnowball = function(){
 		$scope.CollageTitle = "Snowball";
@@ -63,12 +63,12 @@ angular.module('myApp.view1', ['ngRoute'])
 		$scope.Keyword3 = "Intelligent";
 		$scope.Keyword4 = "Eloquent";
 		$scope.Keyword5 = "Trustworthy";
-		$scope.Keyword6 = "Passionate";
+		$scope.Keyword6 = "Leon Trotsky";
 	}
 	$scope.createBenjamin = function(){
 		$scope.CollageTitle = "Benjamin";
 		$scope.Keyword1 = "Donkey";
-		$scope.Keyword2 = "Wise";
+		$scope.Keyword2 = "Apathetic";
 		$scope.Keyword3 = "Old";
 		$scope.Keyword4 = "Pessimistic";
 		$scope.Keyword5 = "Cynical";
@@ -81,7 +81,7 @@ angular.module('myApp.view1', ['ngRoute'])
 		$scope.Keyword3 = "Loyal";
 		$scope.Keyword4 = "Dedicated";
 		$scope.Keyword5 = "Simple";
-		$scope.Keyword6 = "Slow Minded";
+		$scope.Keyword6 = "Working Class";
 	}
 	$scope.createSquealer = function(){
 		$scope.CollageTitle = "Squealer";
@@ -89,8 +89,8 @@ angular.module('myApp.view1', ['ngRoute'])
 		$scope.Keyword2 = "Propoganda";
 		$scope.Keyword3 = "Deciever";
 		$scope.Keyword4 = "Politician";
-		$scope.Keyword5 = "";
-		$scope.Keyword6 = "";
+		$scope.Keyword5 = "Manupilative";
+		$scope.Keyword6 = "Persuasive";
 	}
 	$scope.createJones = function(){
 		$scope.CollageTitle = "Mr. Jones";
@@ -98,25 +98,16 @@ angular.module('myApp.view1', ['ngRoute'])
 		$scope.Keyword2 = "Farmer";
 		$scope.Keyword3 = "Drunk";
 		$scope.Keyword4 = "Unkind";
-		$scope.Keyword5 = "";
-		$scope.Keyword6 = "";
+		$scope.Keyword5 = "Irresponsible";
+		$scope.Keyword6 = "Tsar Nicholas II";
 	}
-	$scope.createClover = function(){
-		$scope.CollageTitle = "Clover";
-		$scope.Keyword1 = "Horse";
-		$scope.Keyword2 = "";
-		$scope.Keyword3 = "";
-		$scope.Keyword4 = "";
-		$scope.Keyword5 = "";
-		$scope.Keyword6 = "";
-	}
-	$scope.createMoses = function(){
-		$scope.CollageTitle = "Moses";
-		$scope.Keyword1 = "Raven";
-		$scope.Keyword2 = "";
-		$scope.Keyword3 = "";
-		$scope.Keyword4 = "";
-		$scope.Keyword5 = "";
-		$scope.Keyword6 = "";
+	$scope.createDogs = function(){
+		$scope.CollageTitle = "The 9 Dogs";
+		$scope.Keyword1 = "Viscous Dogs";
+		$scope.Keyword2 = "Private";
+		$scope.Keyword3 = "Violent";
+		$scope.Keyword4 = "Corrupted";
+		$scope.Keyword5 = "Secret";
+		$scope.Keyword6 = "NKVD";
 	}
 }]);
