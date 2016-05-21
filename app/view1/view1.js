@@ -10,6 +10,17 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', ['$scope','$http',function($scope,$http) {
+
+	function getImageURL(imageArray){
+		var tempArray = [];
+		for(var i in imageArray){
+			if (imageArray[i][4] == 's'){
+				tempArray.push(imageArray[i]);
+			}
+		}
+		return tempArray;
+	}
+
 	$scope.CreateMural = function(){
 		$scope.CollageTitle;
 		$scope.HeaderVisible=true;
@@ -37,7 +48,8 @@ angular.module('myApp.view1', ['ngRoute'])
 				}).then(function successCallback(response) {
 					var splittext = response.data;
 					var newsplittext = splittext.split('"ou":"');
-					var tempString = newsplittext[Math.floor(Math.random() * 10) + 1];
+					newsplittext = getImageURL(newsplittext);
+					var tempString = newsplittext[Math.floor(Math.random() * 4) + 1];
 					var linkF = tempString.split('"');
 					$scope.imgSrc.push(linkF[0]);
 				}, function errorCallback(response) {
